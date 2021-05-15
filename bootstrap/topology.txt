@@ -1,0 +1,9 @@
+bootstrap/
+├── dist/
+│   ├── css/
+│   └── js/
+├── site/
+│   └──content/
+	image
+	
+shift +alt +f auto align key

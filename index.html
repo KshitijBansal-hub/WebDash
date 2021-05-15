@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
+    <link rel="stylesheet" href="asset\css\card.css">
+    <title>Dashboard</title>
+    <link rel="icon" href="./asset/image/titleoio.png">
+</head>
+
+<body>
+    <!-- Image and text -->
+    <nav class="navbar sticky-top navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand text-secondary" href="#">
+                <img src="asset\image\wind-energy.svg" alt="" width="30" height="24" class="d-inline-block align-top">
+                WIND MILL
+            </a>
+            <span class="text-danger">
+                <marquee>
+                    <!-- Open weather api -->
+                    <span>Status: </span><a class="env-status"></a>
+                    <span> Speed: </span><a class="wind-speed"></a>
+                    <span> Angle: </span><a class="dir-deg"></a>
+                </marquee>
+            </span>
+            <span class="text-info"><img src="asset/image/diagram.svg" alt="" width="30" height="24"
+                    class="d-inline-block align-top"><strong> DASHBOARD </strong></span>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+            <div class="col-md-8">
+                <div class="d-flex align-items-start">
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home"
+                            role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                        <a class="nav-link" id="v-pills-Service Alert-tab" data-bs-toggle="pill"
+                            href="#v-pills-servicealert" role="tab" aria-controls="v-pills-servicealert"
+                            aria-selected="false">Service Alert</a>
+                        <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings"
+                            role="tab" aria-controls="v-pills-settings" aria-selected="false">Infromation</a>
+                        <br>
+                        <button type="button" class="btn btn-outline-warning" id="time">.....</button>
+                        <br>
+                        <button type="button" class="btn btn-info" onclick="sum(Power)">Average Power </button>
+                        <span style="font-weight:bold; color: chartreuse;" id="Demo"></span>
+                        <div id="Demo"></div>
+                        <br>
+                        <button type="button" class="btn btn-danger" onclick="caution(Power)">Caution</button>
+            
+
+                    </div>
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab">
+                            
+                            <canvas id="myChart" width="680px"
+                                height="360px"></canvas></div>
+                        <div class="tab-pane fade" id="v-pills-servicealert" role="tabpanel"
+                            aria-labelledby="v-pills-servicealert-tab">
+                            <iframe src="fire.html" width="680px" height="360px" scrolling=""></iframe>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                            aria-labelledby="v-pills-settings-tab">
+                            <div class="card  border border-warning text-white">
+                                <img class="card-img"  width="680px" height="360px" src="asset\image\turbine.gif" alt="Card image">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title text-dark">About Project</h5>
+                                  <p class="card-text text-justify">This Project is about tracking the real-time health of all parts of the turbine including generator, blades, etc. Apart from this live parameters taken such
+                                    as wind direction, temperature, current, voltage, and altitude which further sent to a Dashboard having some decision-making ability on the predefined
+                                    dataset.</p>
+                                  <h6 class="card-title text-secondary">Mentor & Maker's</h6>
+                                  <!-- About Us  -->
+                                   <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                          <div class="our-team">
+                                            <div class="picture">
+                                              <img class="img-fluid" src="asset\image\vinaya_gohokar.jpg">
+                                              <h6 class="name text-white text-center">Vinaya Gohokar</h6>
+                                            </div>
+                                      
+                                          </div>
+                                        </div>
+                                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                                <div class="our-team">
+                                                    <div class="picture">
+                                                    <img class="img-fluid" src="asset\image\Maker C.jpg">
+                                                    <h6 class="name text-white text-center">Kshitij Bansal</h6>
+                                                    </div>
+                                            
+                                          </div>
+                                        </div>
+                                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                          <div class="our-team">
+                                            <div class="picture">
+                                              <img class="img-fluid" src="asset\image\Dipu_img.jpg">
+                                              <h6 class="name text-white text-center">Dipu Singh</h6>
+                                            </div>
+                                      
+                                          </div>
+                                        </div>
+                                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                          <div class="our-team">
+                                            <div class="picture">
+                                              <img class="img-fluid" src="asset\image\Maker A.png">
+                                              <h6 class="name text-white text-center">Marut Asawa</h6>
+                                            </div>
+                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                    
+                                   </div>
+                                
+                                  
+
+                                
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="text-info">Systematized Data</div><br>
+                <div class="progress" style="height: 32px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success " role="progressbar"
+                        style="width: 80%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" title="POWER" id="P_single" >Power</div>
+                </div>
+                <br>
+                <div class="progress" style="height: 32px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+                        style="width: 70%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" title="RPM" id="R_single">Rpm</div>
+                </div>
+                <br>
+                <div class="progress" style="height: 32px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+                        style="width: 50%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" title="ALTITUDE" id="A_single">Altitude</div>
+                </div>
+                <br>
+                <div class="progress" style="height: 32px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar"
+                        style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" title="HUMIDITY" id="H_single">Humdity</div>
+                </div>
+                <br>
+                <div class="row border border-secondary border-2 rounded m-2 py-2">
+                    <div class="col-sm-3">
+                        <a href="http://maps.google.com/maps?&z=15&mrt=yp&t=k&q=18.5194706+73.9004863">
+                        <img src="asset\image\route.svg" alt="Google-Map" width="40" height="40" class="d-inline-block"  >
+                        </a>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="row">
+                            <div class="col-8 col-sm-6 pt-2" id = "lat">
+                                Longitude:  73°54'01.8"E 
+                            </div>
+                            <div class="col-4 col-sm-6 pt-2" id = "long">
+                                Latitude: 18°31'10.1"N
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Grid and flex -->
+    <div class="container-fluid"><hr>
+        <div class="row">
+            <div class="col-sm-2">            
+                    <select id="select1" class="btn btn-outline-dark">
+                        <option selected>Day Select menu Range</option>
+                        <option  value="1">0-1</option>
+                        <option  value="2">0-2</option>
+                        <option  value="3">0-3</option>
+                        <option  value="3">0-4</option>
+                        <option  value="3">0-5</option>
+                        <option  value="3">0-6</option>
+                        <option  value="3">0-7</option>
+                        <option  value="3">0-8</option>
+                        <option  value="3">0-9</option>
+                        <option  value="3">0-10</option>
+                        <option  value="3">0-11</option>
+                        <option  value="3">0-12</option>
+                        <option  value="3">0-13</option>
+                        <option  value="3">0-14</option>
+                        <option  value="3">0-15</option>
+                        <option  value="3">0-16</option>
+                        <option  value="3">0-17</option>
+                        <option  value="3">0-18</option>
+                        <option  value="3">0-19</option>
+                        <option  value="3">0-20</option>
+                        <option  value="3">0-21</option>
+                        <option  value="3">0-22</option>
+                        <option  value="3">0-23</option>
+                        <option  value="3">0-24</option>
+                        <option  value="3">0-25</option>
+                        <option  value="3">0-26</option>
+                        <option  value="3">0-27</option>
+                        <option  value="3">0-28</option>
+                        <option  value="3">0-29</option>
+                        <option  value="3">0-30</option>          
+                    </select>
+         
+                    
+                    <p style="color:brown">
+                        Selected option:
+                        <span class="output"></span>
+                    </p>
+                    <button class="btn btn-secondary" onclick="dash(arr)">
+                        <a>Clear</a>
+                    </button>
+                    <button class="btn btn-info" onclick="dummy()">
+                        <a>Power Range</a>
+                    </button>
+                    <span style="font-weight:bold; color: chartreuse;" id="Hello123"></span>
+                    <br>
+                    
+                              
+                </div>
+            <!-- Temperature -->
+            <div class="col-sm-3"><canvas id="myChart1" width="180px" height="180px"></canvas></div>
+            <!--Pressure-->
+            <div class="col-sm-3"><canvas id="myChart2" width="180px" height="180px"></canvas></div>
+            <!--Msg-->
+            <div class="col-sm-4" width="360px">
+                <h3>Mapper</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="table-dark">Field</th>
+                            <th scope="col" class="table-success">Success</th>
+                            <th scope="col" class="table-warning">Warning (-)</th>
+                            <th scope="col" class="table-danger">Danger (+)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Power</th>
+                            <td class="table-success">70 Watt</td>
+                            <td class="table-warning">100 Watt</td>
+                            <td class="table-danger">150 Watt</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Rpm</th>
+                            <td class="table-success">30</td>
+                            <td class="table-warning">50</td>
+                            <td class="table-danger">100</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Wind speed</th>
+                            <td class="table-success">5m/s</td>
+                            <td class="table-warning">10m/s</td>
+                            <td class="table-danger">15m/s</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div></hr>
+        <!-- footer  -->
+        
+        <!----Chatbot---->
+
+        <div>
+            <!-- <iframe src='https://webchat.botframework.com/embed/hoverboas?s=WGgr5EZPWGk.4cOy97F__pm3H2azqoXifPx_tpirXIHQMV2CQYgyRaM'  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe> -->
+            <script>(function (w, d) { w.CollectId = "5fed6b472558920eb9818bae"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async = true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+        </div>
+
+        
+        <!-- Js + Query + Popper  -->
+        <script src="bootstrap\js\bootstrap.bundle.min.js"></script>
+        <!-- Chart JS and Firebase -->
+
+        <script src="asset\js\Chart.min.js"></script>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+        <!-- <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-analytics.js"></script> -->
+        <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
+
+        <script>
+           var firebaseConfig = {
+           apiKey: "AIzaSyA3A3ltcIEOK1c32c4cQrJy5cYUSRFALM0",
+    authDomain: "final-eb194.firebaseapp.com",
+    databaseURL: "https://final-eb194-default-rtdb.firebaseio.com",
+    projectId: "final-eb194",
+    storageBucket: "final-eb194.appspot.com",
+    messagingSenderId: "680999610129",
+    appId: "1:680999610129:web:701867504453dd92754eb0",
+    measurementId: "G-7TLSFNHXN7"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+//   firebase.analytics();
+        </script>
+
+        <!-- Main Java Script -->
+        <script src="asset\js\function.js" type="text/javascript"></script>
+
+</body>
+
+</html>
