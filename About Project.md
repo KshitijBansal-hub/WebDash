@@ -10,7 +10,7 @@ Wind Turbine Parameters Estimation and Visualization through Dashboard
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#Objectives">Prerequisites</a></li>
+        <li><a href="#objectives">Objectives</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
