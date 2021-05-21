@@ -63,4 +63,10 @@ Overall, it is a model that can be beneficial for wind farms and small scale com
 * Dipu Singh
 * Marut Asawa
 
+## Acknowledgement
+We express our gratitude to the institution MIT WORLD PEACE UNIVERSITY, PUNE.
+
+We deeply express our sincere thanks to our Head of School, ECE, Dr Vinaya Gohokar for encouraging and allowing us to present the project on the topic “Wind Turbine Parameters Estimation And Visualization Through Dashboard” at our department premises.
+
+We would also like to thank Prof. Vishal Mamde, Project Coordinator for his constant support and guidance throughout the course of this study. We really appreciate his gentleness and considerate nature, and at the same time being highly professional at work.
 
