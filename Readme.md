@@ -51,6 +51,7 @@ The figure represents interfacing of all sensors with ESP32 Module that are set 
 
 ## Results
 Dashboard showing the real time parameters of the wind turbine which can be accessed from anywhere.The dashboard portrays values in a time stamp of 5 intervals along with a mapper to see the optimal conditions. Real time data is visualized here in the form of graphs and donuts.Also, a page with a button for calculating average power for 5 days and power over a day range along with a caution that acts as a limiter. A chat-bot for service support and maintenance can be seen in the right hand (down) corner.
+
 ![Dashboard](https://user-images.githubusercontent.com/64655415/119115483-d5a78480-ba44-11eb-8977-6c647760eee1.PNG)
 
 ## Conclusion
