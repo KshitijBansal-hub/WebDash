@@ -22,8 +22,8 @@ Wind Turbine Parameters Estimation and Visualization through Dashboard
     <li><a href="#Implementation">Implementation</a></li>
     <li><a href="#Results">Results</a></li>
     <li><a href="#Conclusion">Conclusion</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <li><a href="#Contributors">Contributors</a></li>
+    <li><a href="#Acknowledgement">Acknowledgement</a></li>
   </ol>
 </details>
 
@@ -58,5 +58,9 @@ The dashboard portrays values in a time stamp of 5 intervals along with a mapper
 Thus, the project was implemented starting with collection of data from the sensors to processing of it by ESP32.From there sending to Firebase for storage and visualizing it through dashboard.It can be used by agencies and companies to ensure that optimum conditions as well as servicing and maintenance of windmill is done for which a integrated chat-bot that books an appointment and service alert page in which users can list their issues. 
 Overall, it is a model that can be beneficial for wind farms and small scale companies that need to maximize Cost efficiency in maintaining and servicing wind turbines.
 
+## Contributors
+* Kshitij Bansal
+* Dipu Singh
+* Marut Asawa
 
 
