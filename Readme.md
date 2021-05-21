@@ -47,6 +47,7 @@ This Project is about tracking the real-time health of all parts of the turbine 
 
 ## Implementation
 The figure represents interfacing of all sensors with ESP32 Module that are set at a baud rate of 9600.
+
 ![circuit](https://user-images.githubusercontent.com/64655415/119114849-266aad80-ba44-11eb-958f-3b8b8da2929c.PNG)
 
 ## Results
