@@ -40,3 +40,5 @@ This Project is about tracking the real-time health of all parts of the turbine 
 6.	To obtain real time insights of  failures.   
 
 # Hardware
+![about us 1](https://user-images.githubusercontent.com/64655415/119101329-7d698600-ba36-11eb-80cd-bfc5d5be5d2c.PNG)
+
