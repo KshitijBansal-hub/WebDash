@@ -21,7 +21,7 @@ Wind Turbine Parameters Estimation and Visualization through Dashboard
     </li>
     <li><a href="#Implementation">Implementation</a></li>
     <li><a href="#Results">Results</a></li>
-    <li><a href="#license">License</a></li>
+    <li><a href="#Conclusion">Conclusion</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
@@ -54,6 +54,9 @@ Dashboard showing the real time parameters of the wind turbine which can be acce
 The dashboard portrays values in a time stamp of 5 intervals along with a mapper to see the optimal conditions. Real time data is visualized here in the form of graphs and donuts.Also, a page with a button for calculating average power for 5 days and power over a day range along with a caution that acts as a limiter. A chat-bot for service support and maintenance can be seen in the right hand (down) corner.
 ![Dashboard](https://user-images.githubusercontent.com/64655415/119115483-d5a78480-ba44-11eb-8977-6c647760eee1.PNG)
 
+## Conclusion
+Thus, the project was implemented starting with collection of data from the sensors to processing of it by ESP32.From there sending to Firebase for storage and visualizing it through dashboard.It can be used by agencies and companies to ensure that optimum conditions as well as servicing and maintenance of windmill is done for which a integrated chat-bot that books an appointment and service alert page in which users can list their issues. 
+Overall, it is a model that can be beneficial for wind farms and small scale companies that need to maximize Cost efficiency in maintaining and servicing wind turbines.
 
 
 
