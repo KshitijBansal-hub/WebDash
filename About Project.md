@@ -19,7 +19,7 @@ Wind Turbine Parameters Estimation and Visualization through Dashboard
         <li><a href="#Software">Software</a></li>
       </ul>
     </li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#Implementation">Implementation</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -44,6 +44,11 @@ This Project is about tracking the real-time health of all parts of the turbine 
 
 # Software
 ![Software](https://user-images.githubusercontent.com/64655415/119113643-ee169f80-ba42-11eb-9682-13be447d94fb.PNG)
+
+# Implementation
+The data obtained from all the  sensors in real time would be sent to ESP32 dev kit module for processing.
+![circuit](https://user-images.githubusercontent.com/64655415/119114343-b5c39100-ba43-11eb-92b4-1b582b5a2d83.PNG)
+The sensors are set at a baud rate of 9600 and the values are observed on the serial monitor.
 
 
 
