@@ -10,10 +10,15 @@ Wind Turbine Parameters Estimation and Visualization through Dashboard
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#objectives">Objectives</a></li>
+        <li><a href="#Objectives">Objectives</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#usage">Requirements</a>
+      <ul>
+        <li><a href="#Hardware">Hardware</a></li>
+        <li><a href="#Software">Software</a></li>
+      </ul>
+    </li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -33,3 +38,5 @@ This Project is about tracking the real-time health of all parts of the turbine 
 4.	Ensure  that desired power is achieved from wind farm to  grid and wind plants.
 5.	Maximize the Windmill power generating capability.
 6.	To obtain real time insights of  failures.   
+
+# Hardware
