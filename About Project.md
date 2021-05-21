@@ -1,5 +1,5 @@
 # Project Title
-## Wind Turbine Parameters Estimation and Visualization through Dashboard
+### Wind Turbine Parameters Estimation and Visualization through Dashboard
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
