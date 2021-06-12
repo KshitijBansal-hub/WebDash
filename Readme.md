@@ -60,6 +60,7 @@ Thus, the project was implemented starting with collection of data from the sens
 Overall, it is a model that can be beneficial for wind farms and small scale companies that need to maximize Cost efficiency in maintaining and servicing wind turbines.
 
 ## Contributors
+* Prof Vinaya Gohokar
 * Kshitij Bansal
 * Dipu Singh
 * Marut Asawa
